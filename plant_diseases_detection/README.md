@@ -70,7 +70,20 @@ Before running the system, ensure that you have the following installed:
     git clone https://github.com/BinduMiryala/dengue-disease-prediction-system.git
     cd dengue-disease-prediction-system
     ```
+2. **Install required Python packages**:
+    ```bash
+    pip install tensorflow matplotlib seaborn pandas
+    ```
 
+3. **Prepare dataset folders(if not already present**:
+    ```bash
+    mkdir -p train valid
+    ```
+4. **Run the training script*:
+    If you want to retrain the machine learning model with your own data:
+    ```bash
+    python train.py
+    ```
 ---
 
 ## 📊 Results
