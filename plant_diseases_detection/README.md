@@ -55,20 +55,21 @@ Conv2D -> Conv2D -> MaxPooling2D
 
 ---
 
-# How to Run
+## 🧑‍💻 Installation & Setup
 
-# Step 1: Clone the repository and navigate into it
-git clone https://github.com/yourusername/plant-disease-detection.git
-cd plant-disease-detection
+### Prerequisites
 
-# Step 2: Install required Python packages
-pip install tensorflow matplotlib seaborn pandas
+Before running the system, ensure that you have the following installed:
+- Python 3.x (You can download it from https://www.python.org/downloads/)
+- Git (For cloning the repository)
 
-# Step 3: Place your dataset folders
-# Make sure 'train/' and 'valid/' folders with images are inside the project directory
+### Steps to Install and Run:
 
-# Step 4: Run the training script
-python train.py
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/BinduMiryala/dengue-disease-prediction-system.git
+    cd dengue-disease-prediction-system
+    ```
 
 ---
 
