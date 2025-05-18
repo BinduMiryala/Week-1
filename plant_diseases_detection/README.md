@@ -55,21 +55,22 @@ Conv2D -> Conv2D -> MaxPooling2D
 
 ---
 
-## ▶ How to Run
+## ▶ How to Run the Project
 
-bash
-# Step 1: Clone the repository
-git clone https://github.com/yourusername/plant-disease-detection.git
-cd plant-disease-detection
+```bash
+# Step 1: Open your terminal and go to the project folder
+cd path/to/your/project
 
-# Step 2: Install dependencies
+# Step 2: Install the required Python libraries
 pip install tensorflow matplotlib seaborn pandas
 
-# Step 3: Ensure the dataset is placed in 'train/' and 'valid/' folders
+# Step 3: Ensure the dataset is available in the following structure:
+# └── plant_diseases_detection/
+#     ├── train/
+#     └── valid/
 
-# Step 4: Run the training script
-python train.py
-
+# Step 4: Run the main script to train the model
+python main.py
 
 ---
 
