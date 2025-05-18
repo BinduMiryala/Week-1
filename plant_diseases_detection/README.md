@@ -1,9 +1,99 @@
-# plant_diseases_detection
-Plant Leaf Disease Detection System using AI Algorithms
-# Overview
-Welcome to the Plant Leaf Disease Detection System project! This initiative is crucial for agricultural sustainability as it allows early detection and intervention against plant diseases. By using AI algorithms, this system helps improve crop yield and quality. The project involves three main tasks: data collection, model training, and the development of a user-friendly interface for farmers.
-# Features
-Early Disease Detection: Identify plant diseases in their early stages to enable timely intervention.
-AI-Driven: Utilize advanced AI algorithms for accurate disease detection.
-User-Friendly Interface: Easy-to-use interface designed for farmers with minimal technical knowledge.
-High Accuracy: Ensure high accuracy in disease detection to improve crop yield and quality.
+# 🌿 Plant Disease Detection System
+
+A *Deep Learning-based* Plant Disease Detection System using *TensorFlow* and *Convolutional Neural Networks (CNNs). The model is trained on a large image dataset to classify **38 different plant diseases* with high accuracy.
+
+![TensorFlow](https://img.shields.io/badge/Built%20With-TensorFlow-orange?style=for-the-badge&logo=tensorflow)
+![License](https://img.shields.io/github/license/yourusername/plant-disease-detection?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
+
+---
+
+## 🔍 Features
+
+- *38 Plant Disease Classes*
+- Over *70,000 training images*
+- *Custom CNN model* with 7.8M+ parameters
+- *GPU-efficient training*
+- Uses image_dataset_from_directory() for flexible data loading
+
+---
+
+## 📁 Dataset
+
+- *Training Samples*: 70,295
+- *Validation Samples*: 17,572
+- *Image Size*: 128x128 (RGB)
+- *Total Classes*: 38
+
+---
+
+## 🧠 Model Architecture
+
+plaintext
+Conv2D -> Conv2D -> MaxPooling2D  
+-> Conv2D -> Conv2D -> MaxPooling2D  
+-> Conv2D -> Conv2D -> MaxPooling2D  
+-> Conv2D -> Conv2D -> MaxPooling2D  
+-> Conv2D -> Conv2D -> MaxPooling2D  
+-> Dropout -> Flatten -> Dense(1500)  
+-> Dropout -> Dense(38) (Softmax)  
+
+
+- ✅ 9 Convolutional Layers  
+- ✅ 5 MaxPooling Layers  
+- ✅ Dropout for regularization  
+- ✅ Final Dense layer with 38 softmax outputs
+
+---
+
+## ⚙ Training Configuration
+
+- *Optimizer*: Adam (lr = 0.0001)  
+- *Loss Function*: Categorical Crossentropy  
+- *Batch Size*: 32  
+- *Epochs*: 3 (can be increased for better performance)
+
+---
+
+## ▶ How to Run
+
+bash
+# Step 1: Clone the repository
+git clone https://github.com/yourusername/plant-disease-detection.git
+cd plant-disease-detection
+
+# Step 2: Install dependencies
+pip install tensorflow matplotlib seaborn pandas
+
+# Step 3: Ensure the dataset is placed in 'train/' and 'valid/' folders
+
+# Step 4: Run the training script
+python train.py
+
+
+---
+
+## 📊 Results
+
+- Accuracy improves steadily with more epochs
+- Robust performance on unseen validation data
+- Can be enhanced with data augmentation and fine-tuning
+
+---
+
+## 🚀 Future Scope
+
+- Real-time disease prediction via webcam or mobile camera  
+- Deploy as a web app using *Flask* or *Streamlit*  
+- Evaluate using *confusion matrix* and *F1-score*  
+- Apply *transfer learning* with pretrained CNNs (e.g., VGG, ResNet)
+
+---
+
+## 📝 License
+
+This project is licensed under the *MIT License*.
+
+---
+
+Made with passion for precision agriculture.
