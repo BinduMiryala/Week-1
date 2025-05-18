@@ -75,7 +75,7 @@ Before running the system, ensure that you have the following installed:
     pip install tensorflow matplotlib seaborn pandas
     ```
 
-3. **Prepare dataset folders(if not already present**:
+3. **Prepare dataset folders(if not already present)**:
     ```bash
     mkdir -p train valid
     ```
