@@ -14,8 +14,8 @@ st.sidebar.title("Dashboard")
 app_mode = st.sidebar.selectbox("select Page",["Home","About","Disease Recognition"])
 if(app_mode=="Home"):
     st.header("PLANT DISEASE RECOGNITION SYSTEM")
-    image_path=image_path =image_path = image_path = 'C:/Users/ksrin/OneDrive/Documents/plant_disease_detection/home_page (1).jpeg'
-    st.image(image_path,use_column_width=True)
+    image_path = "C:/Users/Admin/Desktop/Plant Disease Detection/plant_diseases_detection/home_page.jpeg"
+    st.image(image_path, use_container_width=True)  # instead of use_column_width
     st.markdown("""
                 Welcome to the Plant Disease Recognition System! 🌿🔍
     
@@ -54,8 +54,11 @@ elif(app_mode=="About"):
 elif(app_mode=="Disease Recognition"):
     st.header("Disease Recognition")
     test_image = st.file_uploader("Choose an Image:")
-    if(st.button("Show Image")):
-        st.image(test_image,width=4,use_column_width=True)
+    if st.button("Show Image"):
+        if test_image is not None:
+            st.image(test_image, caption="Selected Image", use_column_width=True)
+        else:
+            st.warning("Please upload an image first.")
     #Predict button
     if(st.button("Predict")):
         st.snow()
