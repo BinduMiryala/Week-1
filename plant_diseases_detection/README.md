@@ -70,13 +70,10 @@ Before running the system, ensure that you have the following installed:
     git clone https://github.com/BinduMiryala/dengue-disease-prediction-system.git
     cd dengue-disease-prediction-system
     ```
-2.## Installation
-
-To install the required Python packages, run:
-
-```bash
-pip install -r requirements.txt
-
+2. **Installation**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 3. **Prepare dataset folders(if not already present)**:
     ```bash
